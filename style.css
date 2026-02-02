@@ -1,0 +1,107 @@
+body {
+    background-color: #f0f2f5;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.phone-container {
+    padding: 20px;
+    width: 350px;
+    height: auto;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+    color: #ff4458;
+}
+
+/* Lägg till/ersätt detta i din style.css */
+.image-container {
+    flex: 1;
+    width: 100%;
+    height: 350px; /* Fixerad höjd för stabilitet */
+    background: #ddd;
+    overflow: hidden;
+}
+
+#profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Detta gör att bilden beskärs snyggt istället för att tryckas ihop */
+    display: block;
+}
+
+.profile-card {
+    flex: 1;
+    margin: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #eee;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-placeholder {
+    flex: 1;
+    background: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+.info {
+    padding: 2px;
+    background: white;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    margin: 0;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    height: 60px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+button:hover { transform: scale(1.1); }
+
+.like { background: #00e676; color: white; margin-left: 2px; width: 40%;}
+.dislike { background: #ff5252; color: white; margin-right: 2px; width: 40%;}
+
+#match-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(255, 68, 88, 0.95);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 10;
+}
+
+.hidden { display: none !important; }
