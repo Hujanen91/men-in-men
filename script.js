@@ -6,7 +6,7 @@ const profiles = [
     },
     { 
         name: "Konrad", 
-        bio: "Proffesionell gamer och yapper, är 100% 'straight' ", 
+        bio: "Professionell gamer och yapper, är 100% 'straight' ", 
         image: "465054743_8830134577052217_3493146278570007325_n.jpg" // Ändra till namnet på din bildfil
     }
 ];
